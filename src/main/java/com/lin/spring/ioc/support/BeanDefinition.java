@@ -8,6 +8,11 @@ public class BeanDefinition {
     private String id;
     private Class clazz;
 
+    public BeanDefinition(String id, Class clazz) {
+        this.id = id;
+        this.clazz = clazz;
+    }
+
     public String getId() {
         return id;
     }
