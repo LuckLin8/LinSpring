@@ -23,7 +23,7 @@ public class MyController {
     }
 
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationApplicaitonContext("application.properties");
+        ApplicationContext context = new AnnotationApplicaitonContext("applicationContext.properties");
         MyController controller = context.getBean("com.lin.spring.demo.MyController",MyController.class);
         controller.test();
     }
