@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @Date 2020/7/14 22:21
  * @Author lbw
  **/
-public class AnnotationApplicaitonContext implements ApplicationContext, BeanRegister {
+public class AnnotationApplicationContext implements ApplicationContext, BeanRegister {
 
     private Map<String, Object> instanceMapping = new ConcurrentHashMap<String, Object>();
 
@@ -24,7 +24,7 @@ public class AnnotationApplicaitonContext implements ApplicationContext, BeanReg
     //配置文件的config，这里直接使用properties
     private Properties config = new Properties();
 
-    public AnnotationApplicaitonContext(String localtion) {
+    public AnnotationApplicationContext(String localtion) {
         InputStream is = null;
         try {
 

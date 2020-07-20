@@ -1,12 +1,9 @@
 package com.lin.spring.demo;
 
 import com.lin.spring.ioc.ApplicationContext;
-import com.lin.spring.ioc.BeanRegister;
 import com.lin.spring.ioc.annotation.Autowire;
 import com.lin.spring.ioc.annotation.Controller;
-import com.lin.spring.ioc.support.AnnotationApplicaitonContext;
-import com.lin.spring.ioc.support.BeanDefinitionParser;
-import sun.applet.Main;
+import com.lin.spring.ioc.support.AnnotationApplicationContext;
 
 /**
  * @Date 2020/7/15 20:08
@@ -23,7 +20,7 @@ public class MyController {
     }
 
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationApplicaitonContext("applicationContext.properties");
+        ApplicationContext context = new AnnotationApplicationContext("applicationContext.properties");
         MyController controller = context.getBean("com.lin.spring.demo.MyController",MyController.class);
         controller.test();
     }
