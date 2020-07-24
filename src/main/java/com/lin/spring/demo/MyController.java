@@ -8,6 +8,7 @@ import com.lin.spring.ioc.support.AnnotationApplicationContext;
 /**
  * @Date 2020/7/15 20:08
  * @Author lbw
+ * 测试
  **/
 @Controller
 public class MyController {
